@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "DetailsViewController.h"
 
 @interface TableViewController ()
 @property NSMutableArray *colleaguesFemale;
@@ -17,8 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _colleaguesFemale=[NSMutableArray arrayWithObjects:@"Mona",@"Esraa",@"Alaa",@"Tasneem",@"Fatema",nil];
-    _colleaguesMale =[NSMutableArray arrayWithObjects:@"Ahmed",@"Mohamed",@"Amir",nil];
+    _colleaguesFemale=[NSMutableArray arrayWithObjects:
+                       @{@"name":@"Mona", @"phone":@"0123456789",@"age":@"24",@"email":@"mona@gmail.com", @"address":@"Mansura"},
+                      @{@"name":@"Esraa", @"phone":@"0123456789",@"age":@"24",@"email":@"esraa@gmail.com", @"address":@"Mansura"},
+                       @{@"name":@"Fatema", @"phone":@"0123456789",@"age":@"24",@"email":@"fatema@gmail.com", @"address":@"Mansura"},
+                       @{@"name":@"Hend", @"phone":@"0123456789",@"age":@"24",@"email":@"hend@gmail.com", @"address":@"Mansura"},nil];
+    _colleaguesMale =[NSMutableArray arrayWithObjects:
+                       @{@"name":@"Amir", @"phone":@"0123456789",@"age":@"24",@"email":@"amir@gmail.com", @"address":@"Mansura"},
+                       @{@"name":@"Mohamed", @"phone":@"0123456789",@"age":@"24",@"email":@"mohamed@gmail.com", @"address":@"Mansura"},
+                       @{@"name":@"Ahmed", @"phone":@"0123456789",@"age":@"24",@"email":@"ahmed@gmail.com", @"address":@"Mansura"},nil];
 }
 
 #pragma mark - Table view data source
@@ -43,19 +51,39 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    NSDictionary * colleague;
     switch (indexPath.section) {
         case 0:
-            cell.textLabel.text =[_colleaguesFemale objectAtIndex:indexPath.row];
+            colleague = _colleaguesFemale[indexPath.row];
             break;
         case 1:
-            cell.textLabel.text=[_colleaguesMale objectAtIndex:indexPath.row];
+            colleague = _colleaguesMale[indexPath.row];
             break;
         default:
             break;
     }
+    cell.textLabel.text = colleague[@"name"];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSDictionary *colleague;
+    switch (indexPath.section) {
+        case 0:
+            colleague = _colleaguesFemale[indexPath.row];
+            break;
+        case 1:
+            colleague = _colleaguesMale[indexPath.row];
+            break;
+        default:
+            break;
+    }
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    DetailsViewController *detailsVC = [self.storyboard instantiateViewControllerWithIdentifier:@"detailsVC"];
+    detailsVC.colleague=colleague;
+    [self.navigationController pushViewController:detailsVC animated:YES];
+    
+}
 
 /*
 // Override to support conditional editing of the table view.

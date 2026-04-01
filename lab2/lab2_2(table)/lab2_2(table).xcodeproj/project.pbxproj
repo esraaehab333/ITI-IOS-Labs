@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		460A36DF2F7D351000DB87DE /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 460A36DE2F7D351000DB87DE /* TableViewController.m */; };
+		460A36E22F7D3FA600DB87DE /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 460A36E12F7D3FA600DB87DE /* DetailsViewController.m */; };
 		4664BBEB2F7D13720067AFDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4664BBEA2F7D13720067AFDC /* AppDelegate.m */; };
 		4664BBEE2F7D13720067AFDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4664BBED2F7D13720067AFDC /* ViewController.m */; };
 		4664BBF12F7D13720067AFDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664BBEF2F7D13720067AFDC /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		460A36DD2F7D351000DB87DE /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		460A36DE2F7D351000DB87DE /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		460A36E02F7D3FA600DB87DE /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		460A36E12F7D3FA600DB87DE /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		4664BBE62F7D13720067AFDC /* lab2_2(table).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lab2_2(table).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4664BBE92F7D13720067AFDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4664BBEA2F7D13720067AFDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				4664BBEF2F7D13720067AFDC /* Main.storyboard */,
 				460A36DD2F7D351000DB87DE /* TableViewController.h */,
 				460A36DE2F7D351000DB87DE /* TableViewController.m */,
+				460A36E02F7D3FA600DB87DE /* DetailsViewController.h */,
+				460A36E12F7D3FA600DB87DE /* DetailsViewController.m */,
 				4664BBF22F7D13720067AFDC /* Assets.xcassets */,
 				4664BBF42F7D13720067AFDC /* LaunchScreen.storyboard */,
 				4664BBF72F7D13720067AFDC /* Info.plist */,
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4664BBEE2F7D13720067AFDC /* ViewController.m in Sources */,
+				460A36E22F7D3FA600DB87DE /* DetailsViewController.m in Sources */,
 				4664BBF92F7D13720067AFDC /* main.m in Sources */,
 				4664BBEB2F7D13720067AFDC /* AppDelegate.m in Sources */,
 				460A36DF2F7D351000DB87DE /* TableViewController.m in Sources */,
