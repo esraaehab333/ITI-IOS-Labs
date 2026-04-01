@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ClearText.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SecondViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *helloNameText;
 @property NSString *userName;
+@property id<ClearText>firstVC;
 @end
 
 NS_ASSUME_NONNULL_END

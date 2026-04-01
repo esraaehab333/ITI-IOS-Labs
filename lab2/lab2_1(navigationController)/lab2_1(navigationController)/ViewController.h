@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "ClearText.h"
+@interface ViewController : UIViewController<ClearText>
 
 @end
 

@@ -25,6 +25,10 @@
     //SecondViewController *svc = [SecondViewController new];
     SecondViewController *svc = [self.storyboard   instantiateViewControllerWithIdentifier:@"secondVC"];
     svc.userName =_textField.text;
+    svc.firstVC=self;
     [self.navigationController pushViewController:svc animated:YES];
+}
+-(void)clear{
+    _textField.text=@"";
 }
 @end

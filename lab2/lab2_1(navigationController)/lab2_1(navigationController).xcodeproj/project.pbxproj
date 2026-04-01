@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		460A36E32F7D54B400DB87DE /* ClearText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearText.h; sourceTree = "<group>"; };
 		4664BBA52F7CFF8B0067AFDC /* lab2_1(navigationController).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lab2_1(navigationController).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4664BBA82F7CFF8B0067AFDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4664BBA92F7CFF8B0067AFDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 				4664BBAE2F7CFF8B0067AFDC /* Main.storyboard */,
 				4664BBDA2F7D086D0067AFDC /* SecondViewController.h */,
 				4664BBDB2F7D086D0067AFDC /* SecondViewController.m */,
+				460A36E32F7D54B400DB87DE /* ClearText.h */,
 				4664BBB12F7CFF8C0067AFDC /* Assets.xcassets */,
 				4664BBB32F7CFF8C0067AFDC /* LaunchScreen.storyboard */,
 				4664BBB62F7CFF8C0067AFDC /* Info.plist */,

@@ -16,6 +16,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _helloNameText.text = [@"Hello " stringByAppendingString:_userName];
+    UIBarButtonItem *rightBtn =[[UIBarButtonItem alloc]
+                                initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(clear)];
+    self.navigationItem.rightBarButtonItem= rightBtn;
+}
+-(void)clear{
+    printf("clear");
+    [_firstVC clear];
 }
 
 /*
